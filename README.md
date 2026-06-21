@@ -1,32 +1,42 @@
 # 🏥 Medical Insurance Cost Prediction using Regression Models
 
+Predicting medical insurance charges using **Linear Regression**, **Ridge Regression**, and **Lasso Regression**.
+
+---
+
 ## 📌 Project Overview
 
-This project predicts medical insurance charges based on demographic and health-related factors using machine learning regression models.
+The objective of this project is to predict **medical insurance charges** based on demographic and health-related factors. The project includes data preprocessing, exploratory data analysis (EDA), model building, and performance comparison of three regression algorithms.
 
-The objective is to compare the performance of:
+---
 
-- Linear Regression
-- Ridge Regression
-- Lasso Regression
+## 🎯 Objectives
+
+- Analyze factors affecting insurance charges.
+- Build a baseline Linear Regression model.
+- Apply Ridge and Lasso Regression to reduce overfitting.
+- Compare model performance using evaluation metrics.
+- Identify the most influential features affecting insurance costs.
 
 ---
 
 ## 📂 Dataset
 
-The dataset contains information about insurance beneficiaries, including:
+The dataset contains **1,338 records** with the following features:
 
-- Age
-- Sex
-- BMI
-- Number of Children
-- Smoking Status
-- Region
-- Medical Insurance Charges (Target Variable)
+| Feature | Description |
+|---------|-------------|
+| Age | Age of the beneficiary |
+| Sex | Gender of the beneficiary |
+| BMI | Body Mass Index |
+| Children | Number of dependents |
+| Smoker | Smoking status |
+| Region | Residential region |
+| Charges | Medical insurance charges (Target Variable) |
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -38,43 +48,46 @@ The dataset contains information about insurance beneficiaries, including:
 
 ---
 
-## 📊 Exploratory Data Analysis
+## 🔍 Exploratory Data Analysis
 
 The following analyses were performed:
 
-- Missing value check
-- Statistical summary
-- Distribution of insurance charges
-- Correlation heatmap
-- Feature relationships
+- Missing Value Check
+- Statistical Summary
+- Distribution of Insurance Charges
+- Correlation Heatmap
+- Feature Relationships
 
 ---
 
 ## ⚙️ Data Preprocessing
 
 - One-Hot Encoding
-- Train-Test Split
+- Train-Test Split (80:20)
 - Feature Scaling using StandardScaler
 
 ---
 
-## 🤖 Models Implemented
+## 🤖 Machine Learning Models
 
-### 1. Linear Regression
+### 1️⃣ Linear Regression
 
-A baseline regression model for predicting insurance charges.
+- Baseline regression model.
+- Predicts insurance charges using all input features.
 
-### 2. Ridge Regression
+### 2️⃣ Ridge Regression
 
-Uses L2 regularization to reduce overfitting.
+- Uses **L2 Regularization**.
+- Reduces overfitting by shrinking coefficient values.
 
-### 3. Lasso Regression
+### 3️⃣ Lasso Regression
 
-Uses L1 regularization and performs feature selection.
+- Uses **L1 Regularization**.
+- Performs automatic feature selection by shrinking less important coefficients to zero.
 
 ---
 
-## 📈 Model Evaluation
+## 📊 Model Evaluation
 
 The models were evaluated using:
 
@@ -84,17 +97,20 @@ The models were evaluated using:
 
 ---
 
-## 📌 Key Findings
+## 📈 Key Insights
 
-- Smoking status is the strongest predictor of insurance charges.
-- Age and BMI significantly influence medical costs.
-- Ridge Regression improves model stability.
-- Lasso Regression performs feature selection by shrinking less important coefficients.
-- The regression models provide reliable predictions for insurance charges.
+- 🚬 Smoking status is the strongest predictor of insurance charges.
+- 👤 Older individuals tend to have higher insurance costs.
+- ⚖️ Higher BMI is associated with increased medical expenses.
+- 👨‍👩‍👧‍👦 The number of children has a relatively small impact.
+- 📉 Ridge Regression improves model stability through regularization.
+- ✂️ Lasso Regression simplifies the model by reducing less important coefficients.
 
 ---
 
-## 📷 Sample Visualizations
+## 📷 Visualizations
+
+The notebook includes:
 
 - Distribution of Charges
 - Correlation Heatmap
@@ -104,34 +120,10 @@ The models were evaluated using:
 
 ---
 
-## 🚀 How to Run
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Medical-Insurance-Cost-Prediction.git
-```
-
-2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Open the notebook
-
-```bash
-jupyter notebook
-```
-
-4. Run all cells.
-
----
-
-## 📁 Repository Structure
+## 📁 Project Structure
 
 ```
-Medical-Insurance-Cost-Prediction
+Medical-Insurance-Cost-Prediction/
 │
 ├── Medical_Insurance_Cost_Prediction.ipynb
 ├── insurance.csv
@@ -142,7 +134,38 @@ Medical-Insurance-Cost-Prediction
 
 ---
 
+## 🚀 How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Souri-Sarkar/Medical-Insurance-Cost-Prediction.git
+```
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Open the notebook and run all cells.
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how regression techniques can effectively predict medical insurance charges. Among the factors analyzed, **smoking status**, **age**, and **BMI** were found to have the greatest influence on insurance costs. The comparison of Linear Regression, Ridge Regression, and Lasso Regression highlights the benefits of regularization in improving model stability and reducing overfitting.
+
+---
+
 ## 👤 Author
 
 **Souri Sarkar**
 
+- GitHub: https://github.com/Souri-Sarkar
